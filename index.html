@@ -2,28 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grabit Goods - Home</title>
+  <title>Grabit Goods</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    nav a {
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Grabit Goods</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h2>Welcome to Grabit Goods!</h2>
-    <p>Your trusted FMCG wholesale partner in Nalgonda, Telangana.</p>
+    <section id="home">
+      <h2>Welcome to Grabit Goods</h2>
+      <p>We are your trusted FMCG wholesale distributor based in Nampally, Nalgonda.</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x150?text=Chilli+Powder" alt="Chilli Powder" />
+          <h3>Chilli Powder</h3>
+          <p>Pure and spicy red chilli powder</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x150?text=Turmeric" alt="Turmeric" />
+          <h3>Turmeric</h3>
+          <p>High-quality turmeric for cooking and health</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x150?text=Coriander" alt="Coriander" />
+          <h3>Coriander</h3>
+          <p>Fresh and flavorful coriander powder</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x150?text=Snacks" alt="Snacks" />
+          <h3>Snacks</h3>
+          <p>Various popular Indian snacks</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Grabit Goods is committed to providing top-quality FMCG products to retailers and customers across Telangana. With a focus on authenticity, affordability, and service, we ensure fast delivery and trusted partnerships.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/xoqgqjpk" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Grabit Goods. All rights reserved.</p>
+    <p>&copy; 2025 Grabit Goods</p>
   </footer>
 </body>
 </html>
